@@ -4,14 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="static/css/styles.css">
-    <title>Document</title>
+    <title>Drum Machine</title>
 </head>
 <body>
     <main class="home-screen">
-        <div data-key="68" class="key">
-            <kbd>D</kbd>
-            <span class="sound">kick</span>
-        </div>
+        <audio src="sounds/glitch_hh_01.wav" autostart="false" id="hat_01"></audio>
+        <h1>Awesome 8-bit drum machine</h1>
+        <h4>Using your keyboard, press on the key to play the sound below it! try it out!</h4>
+
+        <div class="button" onclick="playsample()">kick</div>
     </main>
+    
+<script>
+    function playsample(){
+        var sample = document.getElementById('hat_01');
+        sample.play(); 
+    }
+
+</script>
 </body>
 </html>
