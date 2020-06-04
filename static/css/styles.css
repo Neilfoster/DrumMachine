@@ -8,3 +8,19 @@
     display: block;
     text-align: center;
 }
+
+.button {
+    background-color: green;
+    width:50px;
+    height:80px;
+    margin:10px;
+    padding:10px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.button:active {
+    background-color: cyan;
+}
